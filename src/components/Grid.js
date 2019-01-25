@@ -6,6 +6,7 @@ export default class MyGrid extends React.Component {
     return (
       <div className="flex-container">
         <div className="flex-left">Hi there</div>
+
         <div className="container-right">
           <div className="item-1">1</div>
           <div className="item-2">2</div>
