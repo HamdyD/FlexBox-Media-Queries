@@ -1,0 +1,30 @@
+.flex-container {
+  display: flex;
+  background: lightgrey;
+  flex-direction: row;
+  height: 370px;
+  margin-top: 5em;
+  width: 100%;
+}
+
+.flex-left {
+  border: 1px solid black;
+  height: 100%;
+  width: 45%;
+}
+
+.container-right {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4 {
+  height: 50%;
+  width: 50%;
+  background-color: black;
+  color: white;
+}
