@@ -69,7 +69,7 @@ export default class MyGrid extends React.Component {
           <div className="item item-3">
             <div className="text-product">
               <h2>Casque Beats</h2>
-              <p>Les fils en moins, la magie en en plus.</p>
+              <p>Les fils en moins, la magie en plus.</p>
             </div>
             {myImages["headphones"]}
           </div>
