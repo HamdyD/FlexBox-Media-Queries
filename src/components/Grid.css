@@ -2,16 +2,20 @@
   display: flex;
   flex-direction: row;
   height: 90vh;
-  margin-top: 5em;
+  margin: 5em 0;
   width: 100%;
 }
 
 .container-left {
-  border: 1px solid black;
   flex-basis: 45%;
   flex-wrap: wrap;
   margin-right: 10px;
-  background: linear-gradient(10deg, #b3b3b3, #f2f2f2 55%);
+  background: linear-gradient(10deg, #ffddcc, white);
+}
+
+.container-left:hover {
+  box-shadow: 0px 5px 8px 5px lightgrey;
+  transition: 0.6s;
 }
 
 .container-right {
@@ -20,14 +24,17 @@
   flex-basis: 55%;
   height: auto;
   flex-wrap: wrap;
-  background-color: pink;
 }
 
 .item {
   flex-basis: calc(50% - 15px);
   text-align: center;
-  background-color: black;
-  color: white;
+  background-color: #ffddcc;
+}
+
+.item:hover {
+  box-shadow: 0px 5px 8px 3px lightgrey;
+  transition: 0.6s;
 }
 
 .item-1 {
@@ -35,46 +42,60 @@
   margin-bottom: 10px;
   margin-left: 10px;
 }
-
 .item-2 {
   margin-bottom: 10px;
   margin-left: 10px;
 }
-
 .item-3 {
   margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
 }
-
 .item-4 {
   margin-top: 10px;
   margin-left: 10px;
 }
+
+/* images */
+
+.img {
+  max-width: 35%;
+  padding-top: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-left {
+  padding-top: 15%;
+  max-width: 50%;
+}
+
+.img:hover {
+  transform: scale(1.2);
+}
+
+/* responsiveness */
 
 @media (max-width: 815px) {
   .main-container {
     height: 70vh;
   }
 }
-
 @media (max-width: 570px) {
   .item {
     flex-basis: calc(50% - 20px);
   }
-
   .item-1,
   .item-2,
   .item-3,
   .item-4 {
     margin: 10px;
   }
-
   .main-container {
     height: 200vh;
     flex-direction: column;
   }
-
   .container-left {
     width: 100%;
     flex-basis: 20%;
