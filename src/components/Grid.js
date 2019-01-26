@@ -43,13 +43,43 @@ export default class MyGrid extends React.Component {
   render() {
     return (
       <div className="main-container">
-        <div className="container-left">{myImages["left-image"]}</div>
+        <div className="container-left">
+          {myImages["left-image"]}
+          <div className="text-product">
+            <h1>Découverte</h1>
+            <p>Découvrez nos nouveautés!</p>
+          </div>
+        </div>
 
         <div className="container-right">
-          <div className="item item-1">{myImages["smart-watch"]}</div>
-          <div className="item item-2">{myImages["phone"]}</div>
-          <div className="item item-3">{myImages["headphones"]}</div>
-          <div className="item item-4">{myImages["google"]}</div>
+          <div className="item item-1">
+            <div className="text-product">
+              <h2>Smart Watch</h2>
+              <p>Votre journée, connectée.</p>
+            </div>
+            {myImages["smart-watch"]}
+          </div>
+          <div className="item item-2">
+            <div className="text-product">
+              <h2>iPhone</h2>
+              <p>Plus puissant, plus élégant.</p>
+            </div>
+            {myImages["phone"]}
+          </div>
+          <div className="item item-3">
+            <div className="text-product">
+              <h2>Casque Beats</h2>
+              <p>Les fils en moins, la magie en en plus.</p>
+            </div>
+            {myImages["headphones"]}
+          </div>
+          <div className="item item-4">
+            <div className="text-product">
+              <h2>Google Home</h2>
+              <p>A votre service.</p>
+            </div>
+            {myImages["google"]}
+          </div>
         </div>
       </div>
     );
